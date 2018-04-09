@@ -4,7 +4,7 @@
 #
 Name     : R-Hmisc
 Version  : 4.1.1
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/Hmisc_4.1-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Hmisc_4.1-1.tar.gz
 Summary  : Harrell Miscellaneous
@@ -52,11 +52,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521183698
+export SOURCE_DATE_EPOCH=1523307890
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521183698
+export SOURCE_DATE_EPOCH=1523307890
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
