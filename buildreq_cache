@@ -1,7 +1,11 @@
 4.2.0
 R-Formula
+R-acepack
 R-base64enc
+R-checkmate
 R-ggplot2
 R-htmlTable
 R-htmltools
+R-htmlwidgets
+R-rstudioapi
 R-viridis

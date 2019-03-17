@@ -4,26 +4,28 @@
 #
 Name     : R-Hmisc
 Version  : 4.2.0
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/Hmisc_4.2-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Hmisc_4.2-0.tar.gz
 Summary  : Harrell Miscellaneous
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
 Requires: R-Hmisc-lib = %{version}-%{release}
-Requires: R-Formula
-Requires: R-base64enc
+Requires: R-acepack
+Requires: R-checkmate
 Requires: R-data.table
-Requires: R-ggplot2
-Requires: R-htmlTable
-Requires: R-htmltools
-Requires: R-viridis
+Requires: R-htmlwidgets
+Requires: R-rstudioapi
 BuildRequires : R-Formula
+BuildRequires : R-acepack
 BuildRequires : R-base64enc
+BuildRequires : R-checkmate
 BuildRequires : R-data.table
 BuildRequires : R-ggplot2
 BuildRequires : R-htmlTable
 BuildRequires : R-htmltools
+BuildRequires : R-htmlwidgets
+BuildRequires : R-rstudioapi
 BuildRequires : R-viridis
 BuildRequires : buildreq-R
 
@@ -53,10 +55,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548604760
+export SOURCE_DATE_EPOCH=1552860510
 
 %install
-export SOURCE_DATE_EPOCH=1548604760
+export SOURCE_DATE_EPOCH=1552860510
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -92,8 +94,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library Hmisc|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  Hmisc || :
 
 
 %files
@@ -121,7 +122,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/Hmisc/help/paths.rds
 /usr/lib64/R/library/Hmisc/html/00Index.html
 /usr/lib64/R/library/Hmisc/html/R.css
-/usr/lib64/R/library/Hmisc/libs/symbols.rds
 /usr/lib64/R/library/Hmisc/tests/Ecdf.r
 /usr/lib64/R/library/Hmisc/tests/ace.s
 /usr/lib64/R/library/Hmisc/tests/american-medical-association.csl
