@@ -4,18 +4,14 @@
 #
 Name     : R-Hmisc
 Version  : 4.2.0
-Release  : 20
+Release  : 21
 URL      : https://cran.r-project.org/src/contrib/Hmisc_4.2-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Hmisc_4.2-0.tar.gz
 Summary  : Harrell Miscellaneous
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
 Requires: R-Hmisc-lib = %{version}-%{release}
-Requires: R-acepack
-Requires: R-checkmate
 Requires: R-data.table
-Requires: R-htmlwidgets
-Requires: R-rstudioapi
 BuildRequires : R-Formula
 BuildRequires : R-acepack
 BuildRequires : R-base64enc
@@ -55,10 +51,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552860510
+export SOURCE_DATE_EPOCH=1552894675
 
 %install
-export SOURCE_DATE_EPOCH=1552860510
+export SOURCE_DATE_EPOCH=1552894675
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
