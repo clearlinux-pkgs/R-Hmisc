@@ -11,6 +11,8 @@ R-htmlTable
 R-htmltools
 R-htmlwidgets
 R-latticeExtra
+R-munsell
 R-rstudioapi
+R-stringi
 R-viridis
 R-xfun
