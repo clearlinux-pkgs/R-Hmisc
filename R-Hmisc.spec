@@ -4,7 +4,7 @@
 #
 Name     : R-Hmisc
 Version  : 4.2.0
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/Hmisc_4.2-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Hmisc_4.2-0.tar.gz
 Summary  : Harrell Miscellaneous
@@ -21,7 +21,6 @@ Requires: R-gtable
 Requires: R-htmlTable
 Requires: R-htmltools
 Requires: R-latticeExtra
-Requires: R-rms
 Requires: R-viridis
 BuildRequires : R-Formula
 BuildRequires : R-acepack
@@ -36,13 +35,17 @@ BuildRequires : R-latticeExtra
 BuildRequires : R-rms
 BuildRequires : R-viridis
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
-analysis, high-level graphics, utility operations, functions for
-	computing sample size and power, importing and annotating datasets,
-	imputing missing values, advanced table making, variable clustering,
-	character string manipulation, conversion of R objects to LaTeX and html code,
-	and recoding variables.
+Hmisc
+=====
+Harrell Miscellaneous
+Current Goals
+=============
+* Continue to refine the summaryX class of functions that replace tables with graphics
+* See also bpplotM and tabulr
+* See http://biostat.mc.vanderbilt.edu/HmiscNew
 
 %package lib
 Summary: lib components for the R-Hmisc package.
@@ -60,10 +63,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562622498
+export SOURCE_DATE_EPOCH=1571843245
 
 %install
-export SOURCE_DATE_EPOCH=1562622498
+export SOURCE_DATE_EPOCH=1571843245
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
