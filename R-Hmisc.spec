@@ -4,7 +4,7 @@
 #
 Name     : R-Hmisc
 Version  : 4.7.0
-Release  : 60
+Release  : 61
 URL      : https://cran.r-project.org/src/contrib/Hmisc_4.7-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Hmisc_4.7-0.tar.gz
 Summary  : Harrell Miscellaneous
