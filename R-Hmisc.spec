@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-Hmisc
-Version  : 5.1.0
-Release  : 72
-URL      : https://cran.r-project.org/src/contrib/Hmisc_5.1-0.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/Hmisc_5.1-0.tar.gz
+Version  : 5.1.1
+Release  : 73
+URL      : https://cran.r-project.org/src/contrib/Hmisc_5.1-1.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/Hmisc_5.1-1.tar.gz
 Summary  : Harrell Miscellaneous
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
@@ -47,7 +47,7 @@ analysis, high-level graphics, utility operations, functions for
 	computing sample size and power, simulation, importing and annotating datasets,
 	imputing missing values, advanced table making, variable clustering,
 	character string manipulation, conversion of R objects to LaTeX and html code,
-	recoding variables, caching, simplified parallel computing, general moving window statistical estimation, and assistance in interpreting principal component analysis.
+	recoding variables, caching, simplified parallel computing, encrypting and decrypting data using a safe workflow, general moving window statistical estimation, and assistance in interpreting principal component analysis.
 
 %package lib
 Summary: lib components for the R-Hmisc package.
@@ -77,10 +77,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683561889
+export SOURCE_DATE_EPOCH=1694534572
 
 %install
-export SOURCE_DATE_EPOCH=1683561889
+export SOURCE_DATE_EPOCH=1694534572
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-Hmisc
 cp %{_builddir}/Hmisc/COPYING %{buildroot}/usr/share/package-licenses/R-Hmisc/c2dc18ad6d6c540fd919ee670d3556e7371927dd || :
@@ -156,6 +156,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/Hmisc/tests/aregImpute3.r
 /usr/lib64/R/library/Hmisc/tests/aregImpute4.r
 /usr/lib64/R/library/Hmisc/tests/aregImpute5.r
+/usr/lib64/R/library/Hmisc/tests/aregImpute6.r
 /usr/lib64/R/library/Hmisc/tests/bootkm.r
 /usr/lib64/R/library/Hmisc/tests/consolidate.R
 /usr/lib64/R/library/Hmisc/tests/csv/FORMAT.csv
