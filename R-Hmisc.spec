@@ -7,7 +7,7 @@
 #
 Name     : R-Hmisc
 Version  : 5.1.2
-Release  : 75
+Release  : 76
 URL      : https://cran.r-project.org/src/contrib/Hmisc_5.1-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Hmisc_5.1-2.tar.gz
 Summary  : Harrell Miscellaneous
