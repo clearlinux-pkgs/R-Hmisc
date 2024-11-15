@@ -1,5 +1,5 @@
 PKG_NAME := R-Hmisc
-URL = https://cran.r-project.org/src/contrib/Hmisc_5.1-3.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/Hmisc_5.2-0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
