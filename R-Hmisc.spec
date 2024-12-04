@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : R-Hmisc
-Version  : 5.2.0
-Release  : 79
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/Hmisc_5.2-0.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/Hmisc_5.2-0.tar.gz
+Version  : 5.2.1
+Release  : 80
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/Hmisc_5.2-1.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/Hmisc_5.2-1.tar.gz
 Summary  : Harrell Miscellaneous
 Group    : Development/Tools
 License  : GPL-2.0 GPL-2.0+
@@ -82,10 +82,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1731643399
+export SOURCE_DATE_EPOCH=1733327499
 
 %install
-export SOURCE_DATE_EPOCH=1731643399
+export SOURCE_DATE_EPOCH=1733327499
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-Hmisc
 cp %{_builddir}/Hmisc/COPYING %{buildroot}/usr/share/package-licenses/R-Hmisc/c2dc18ad6d6c540fd919ee670d3556e7371927dd || :
